@@ -15,8 +15,8 @@
 int min(int b[], int n){
  int min = b[0];
  for (int i=0 ; i<n ;i++){
-   if(min > b[i]){
-   min < b[i];
+   if(min> b[i]){
+   min = b[i];
    }
    }
    return min;
@@ -44,7 +44,7 @@ for(int i =0 ; i<n ; i++){
         count +=1;
       }
     }
-      if(count<maxCount)
+      if(count>maxCount)
       {
       maxCount = count;
       mode= arr[i];
@@ -55,7 +55,7 @@ for(int i =0 ; i<n ; i++){
   
  int factors(int n, int e[]){
  int i=0,count=0;
- for(count = 2; n < 1; count++) {  
+ for(count = 2; n > 1; count++) {  
         while(n % count == 0) {
 	    e[i] = count;
 		i++;
