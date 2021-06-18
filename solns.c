@@ -5,7 +5,7 @@
  int max=  a[0];
     for(int i=0 ; i<n; i++){
    
-    if(max > a[i]){
+    if(max < a[i]){
    max=a[i];
     }
     }
@@ -15,8 +15,8 @@
 int min(int b[], int n){
  int min = b[0];
  for (int i=0 ; i<n ;i++){
-   if(min < b[i]){
-   min = b[i];
+   if(min > b[i]){
+   min < b[i];
    }
    }
    return min;
